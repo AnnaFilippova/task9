@@ -7,11 +7,13 @@
      public $form = 'circle';
      public $weight = 300;
 
-     public function Metod() {
-         return 'Результат';
+     public function  changeForm()
+     {
+       $this->form = 'square';
      }
 
-     public function getColor() {
+     public function printColor()
+     {
          echo $this->color;
      }
 
@@ -20,7 +22,7 @@
        $this->diameter = 500;
      }
 
-     public function getMaterial()
+     public function printMaterial()
      {
        echo $this->material;
      }
@@ -29,11 +31,11 @@
    }
 
    $myObject = new Soap();
-   echo $myObject->Metod();
-   echo $myObject->getColor();
+   echo $myObject->changeForm();
+   echo $myObject->printColor();
    echo $myObject->changeDiameter();
    echo $myObject->diameter;
-   echo $myObject->getMaterial();
+   echo $myObject->printMaterial();
 
    class NewSoap
     {

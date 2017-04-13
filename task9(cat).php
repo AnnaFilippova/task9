@@ -7,11 +7,13 @@
      public $breed = 'british';
      public $weight = 6000;
 
-     public function Metod() {
-         return 'Результат';
+     public function printWeight()
+     {
+         echo $this->weight;
      }
 
-     public function getColor() {
+     public function printColor()
+     {
          echo $this->color;
      }
 
@@ -20,7 +22,7 @@
        $this->length = 800;
      }
 
-     public function getBreed()
+     public function printBreed()
      {
        echo $this->breed;
      }
@@ -29,11 +31,11 @@
    }
 
    $myObject = new Cat();
-   echo $myObject->Metod();
-   echo $myObject->getColor();
+   echo $myObject->printWeight();
+   echo $myObject->printColor();
    echo $myObject->changeLength();
    echo $myObject->length;
-   echo $myObject->getBreed();
+   echo $myObject->printBreed();
 
    class NewCat
     {

@@ -7,11 +7,12 @@
      public $form = 'cylinder';
      public $weight = 800;
 
-     public function Metod() {
-         return 'Результат';
+     public function  changeMaterial()
+     {
+       $this->material = 'earthenware';
      }
 
-     public function getColor() {
+     public function echoColor() {
          echo $this->color;
      }
 
@@ -20,7 +21,7 @@
        $this->diameter = 900;
      }
 
-     public function getMaterial()
+     public function echoMaterial()
      {
        echo $this->material;
      }
@@ -29,11 +30,11 @@
    }
 
    $myObject = new Vase();
-   echo $myObject->Metod();
-   echo $myObject->getColor();
+   echo $myObject->changeMaterial();
+   echo $myObject->echoColor();
    echo $myObject->changeDiameter();
    echo $myObject->diameter;
-   echo $myObject->getMaterial();
+   echo $myObject->echoMaterial();
 
    class NewVase
     {

@@ -7,20 +7,20 @@
      public $form = 'circle';
      public $weight = 500;
 
-     public function Metod() {
-         return 'Результат';
+     public function changeWeightTo900() {
+          $this->weight = 900;
      }
 
-     public function getColor() {
+     public function printColor() {
          echo $this->color;
      }
 
-     public function  changeDiameter()
+     public function  changeDiameterTo200()
      {
        $this->diameter = 200;
      }
 
-     public function getMaterial()
+     public function echoMaterial()
      {
        echo $this->material;
      }
@@ -29,11 +29,11 @@
    }
 
    $myObject = new Ball();
-   echo $myObject->Metod();
-   echo $myObject->getColor();
-   echo $myObject->changeDiameter();
+   echo $myObject->changeWeightTo900();
+   echo $myObject->printColor();
+   echo $myObject->changeDiameterTo200();
    echo $myObject->diameter;
-   echo $myObject->getMaterial();
+   echo $myObject->echoMaterial();
 
    class NewBall
     {
